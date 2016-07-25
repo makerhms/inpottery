@@ -1,0 +1,100 @@
+<html>
+
+	<head>
+
+		<title> 아이앤도예공방 </title>
+
+		<!-- META TAGES -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="아이앤도예공방">
+
+		<!-- STYLES -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- FONT -->
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+		<!-- SCRIPT -->
+    	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script> 
+
+		<!--
+		//////////////////////////////////////////////////
+
+		아이앤도예공방
+
+		Website: -
+		Email: -
+
+		//////////////////////////////////////////////////
+		-->
+
+	</head>
+
+	<body>
+
+	<div class="basis">
+
+		<!-- HERO SECTION -->
+
+		<a name="main">
+		
+		<br>
+		<br>
+		아이앤 도예공방
+		<br>
+
+	</div>
+
+		<!-- FOOTER -->
+
+	<div class="footer">
+	
+		<a name="footer">
+
+		<p>서울시 관악구 봉천동 1573-8</p>
+		<br>
+		<br>
+
+		<!-- MAP -->
+
+		<script> 
+  		function initialize() { 
+  		var myLatlng = new google.maps.LatLng(37.478675, 126.948697); 
+  		var mapOptions = { 
+        	zoom: 17,
+        	scrollwheel: false,
+        	disableDoubleClickZoom: true,
+        	center: myLatlng,
+        	mapTypeId: google.maps.MapTypeId.ROADMAP
+		} 
+  		var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
+  		var marker = new google.maps.Marker({ 
+            position: myLatlng, 
+            map: map, 
+            icon: 'images/map.png'
+  		});
+
+        	google.maps.event.addDomListener(window, "resize", function() { 
+        var center = map.getCenter();
+        	google.maps.event.trigger(map, "resize");
+        	map.setCenter(center); 
+        });
+  		} 
+ 		</script> 
+
+		<body onload="initialize()"> 
+ 		<div id="map_canvas"style="width:100%; max-width: 1700px; height:450px;"></div> 
+		</div>
+		
+	</div>
+
+
+
+	</body>
+
+</html>
