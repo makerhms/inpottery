@@ -7,29 +7,32 @@
 	        box-sizing:border-box;
 }
 
-/* Body */
+/* BODY */
 .basis
 {
 	overflow: hidden;
-	height: 25%;
-	background: #30323f;
-	font-family: "Hanna", serif;
+	background: #ffffff;
+	font-family: "Montserrat", serif;
 	font-size: 3em;
-	color: #f0f1eb;
+	color: #000000;
 	text-align: center;
 }
 
-/* Footer */
+/* FOOTER */
 .footer
 {	
 	overflow: hidden;
 	position: relative;
 	min-width: 320px;
-	height: 75%;
 	width: 100%;
-	background: #30323f;
-	font-family: "Hanna", serif;
-	font-size: 1em;
-	color: #f0f1eb;
+	background: #ffffff;
+	font-family: "Montserrat", serif;
+	font-size: 0.9em;
+	color: #000000;
 	text-align: center;
+}
+
+.footer img {
+	float: center;
+	margin: 0.625em;
 }
